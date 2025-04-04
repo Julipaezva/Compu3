@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>TP de Julieta</title>
-        <link href="estilos.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <title>TP de Julieta</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    </head>
-
-<body>
-    <header id="haciaarriba">
-    </header>
-        <main>
-            <div class="caja">
-                 <h1>Julieta Paez Varela</h1>
-            <nav class="botonera"></nav>     
-            <ol>
+  <body>
+    <!--     entiendo que esto es para poder usar el botón de ir hacia arriba pero no es ideal tener etiquetas vacías, deberías tener contenido acá adentro
+ -->
+    <header id="haciaarriba"></header>
+    <main>
+      <div class="caja">
+        <h1>Julieta Paez Varela</h1>
+        <nav class="botonera"></nav>
+        <!--             No debería ser una ol.   
+                Recordá que las ol son listas ordenadas, con números, como para dar un set de instrucciones (ejemplo 1) prender la hornalla 2) poner la sartén y así)
+                acá deberías usar ul. (unordered list)
+                No anides el h3, no tiene sentido semánticamente en este caso. Los h son títulos, no  deberías usarlos para items en una lista.
+                 Te dejo la corrección más abajo
+ -->
+        <!--  <ol>
                 <li><a href="inicio.html"><h3>Inicio</h3></a></li>
                 <li><a href="sobremi.html"><h3>Sobre mi</h3></a></li>
                 <li><a href="proyectos.html"><h3>Proyectos</h3></a></li>
                 <li><a href="contacto.html"><h3>Contacto</h3></a></li>
-            </ol> 
-            <section>
-                <img src="img/gatito sobre compu.jpg" src="" width="500" height="400" alt="imagen gatito sobre compu"/>
-                <div class="texto-ppal">
-                    <p>Gatito sobre compu</p>
-                </div>
-            </article>
+            </ol>  -->
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="sobremi.html">Sobre mi</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <section>
+          <img
+            src="img/gatito sobre compu.jpg"
+            src=""
+            width="500"
+            height="400"
+            alt="imagen gatito sobre compu"
+          />
+          <div class="texto-ppal">
+            <p>Gatito sobre compu</p>
+          </div>
+          <!--                 esta etiqueta está cerrando pero nunca la abriste, la comento pero deberías o bien borrarla o agregarle la etiqueta de apertura y ver que ponés adentro.
+            </article> -->
         </section>
-            </div>
-        </main>
-        <footer>
-            <a href="#haciaarriba">Volver arriba</a>
-        </footer>
-</body>
+      </div>
+    </main>
+    <footer>
+      <a href="#haciaarriba">Volver arriba</a>
+    </footer>
+  </body>
 </html>

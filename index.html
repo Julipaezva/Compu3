@@ -8,25 +8,25 @@
 
     </head>
 
-<body>
-    <header id="haciaarriba">
+<body> <!-- <body> no está bien indentado, debería estar a la misma altura de <head> -->
+    <header id="haciaarriba"> <!-- evitemos dejar etiquetas vacias sin contenido -->
     </header>
         <main>
-            <div class="caja">
+            <div class="caja"> <!-- si usas <div> para organizar elcontenido podrías usar <section>, si es por los estilos de caja podrías aplicarlos directamente a main -->
                  <h1>Julieta Paez Varela</h1>
-            <nav class="botonera"></nav>     
-            <ol>
-                <li><a href="inicio.html"><h3>Inicio</h3></a></li>
+            <nav class="botonera"></nav>  <!-- si tu idea es poner la lista dentro de <nav> fijate que te quedó afuera -->   
+            <ol> <!-- podrías usar una lista desordenada porque el orden en el menu de navegación no importa tanto -->
+                <li><a href="inicio.html"><h3>Inicio</h3></a></li> <!-- no es correcto usar <h3> dentro de listas, si lo haces por una cuestión del tamaño del texto, deberías usar CSS -->
                 <li><a href="sobremi.html"><h3>Sobre mi</h3></a></li>
                 <li><a href="proyectos.html"><h3>Proyectos</h3></a></li>
                 <li><a href="contacto.html"><h3>Contacto</h3></a></li>
             </ol> 
             <section>
-                <img src="img/gatito sobre compu.jpg" src="" width="500" height="400" alt="imagen gatito sobre compu"/>
-                <div class="texto-ppal">
+                <img src="img/gatito sobre compu.jpg" src="" width="500" height="400" alt="imagen gatito sobre compu"/> <!-- tenés una atributo src repetido, buena descripción de alt pero para mejor accesibilidad se puede ser más descriptivo -->
+                <div class="texto-ppal"> <!-- acá podés aplicar el estilo directamente en <p> no es necesario ponerlo dentro de un contenedor <div> -->
                     <p>Gatito sobre compu</p>
                 </div>
-            </article>
+            <!--  </article> esta etiqueta de cierre te quedó suelta -->
         </section>
             </div>
         </main>

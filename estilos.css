@@ -49,18 +49,21 @@ h1 {
 }
 
 .sobre-mi {
-    background-color: #516af6;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #516af6;
     width: 1080px;
     height: 150px;
-    border-radius: px;
+    border-radius: 20px;
     margin: 50px;
   }
   
   .sobre-mi p {
-    color: white;
-    background-color: #516af6;
+    color: black;
+    background-color: none;
     font-size: 12pt;
-    margin: auto;
+    margin: 30px;
+    align-content: center;
     font-family: Helvetica;
   }
 
@@ -85,7 +88,7 @@ h1 {
     padding: 10px;
     border-radius: 8px;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform:uppercase;
     font-family: Helvetica;
   }
   
@@ -100,26 +103,27 @@ h1 {
   
   .subtitulo p {
     font-size: 14px;
-    margin: 4px 0 10px 0;
+    margin: 4px;
+    font-style: none;
     font-family: Helvetica;
+    align-content: center;
   }
 
   .skill-bar {
-    background-color: #eee;
-    border-radius: 8px;
-    overflow: hidden;
+    background-color: none;
+    border-radius: 20px;
+    margin: 4px;
     font-family: Helvetica;
   }
   
   .skill-bar span {
     display: block;
     height: 14px;
-    background-color: #84a59d;
+    border-radius: 20px;
+    background-color: #f28482;
     color: black;
-    font-size: 12px;
-    text-align: right;
-    padding-right: 5px;
-    line-height: 14px;
+    font-size: 14px;
+    text-align: left;
     font-family: Helvetica;
   }
 
@@ -133,12 +137,17 @@ a :link {
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-flow:row;
     max-width: 1080px;
-    height: auto;
-    margin-left: 70px;
+    height: 500px;
+    margin-left: 60px;
+  }
+
+  .flex-item {
+    text-align: center;
+    margin: 10px;
+    width: 600px;
+    height: 600px;
   }
 
 .a {
@@ -151,6 +160,7 @@ a :link {
     display: flex;
     align-self:flex-end;
     flex-direction: column;
+
 }
 
 /*shrikhand-regular {

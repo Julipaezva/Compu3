@@ -2,111 +2,239 @@
 /* CSS Document */
 
 *{
-    margin: 0px;
-    background-color: #f7ede2;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: linear-gradient(45deg, #3a86ff, #8338ec, #ff006e, #fb5607);
+  display: flex;
+  justify-content: center;
+}
+
+#caja {
+  margin: 60px;
+  background-color: white;
+  max-width: 1250px;
+  max-height: auto;
+  border-radius: 20px;
+}
+
+/*HEADER*/
+
+header{ 
+  width: 1250px;
+  height: 500px; 
+}
+
+#datos {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  gap: 50px;
 }
 
 h1 {
-    color: #516af6;
-    font-family: "Shrikhand", serif;
+	color: #8338ec;
+  font-family: "Shrikhand", serif;
 	font-size: 35pt; 
 }
 
-#caja-de-datos {
-    width: 1800px;
-    height: 300px;
-    background-color: none;
-    margin: 50px 10px 50px 50px;
-    border-radius: 20px;
+#datos ul{ 
+	margin-top: 40px;
+  font-size: 16pt;
+  font-family: Helvetica;
 }
 
-#foto-principal {
-	margin: -97px -351px;
-} 
-
-#titulo-principal {
-	color: #516af6;
-    margin-top: 30px;
-    margin-left: 350px;
-}
-
-#caja-de-datos ul{ 
-	margin: 0;
-    font-size: 14pt;
-    font-family: Helvetica;
-}
-
-#caja-de-datos ul li { 
+#datos ul li { 
 	padding-left: 3px;
-    list-style: none;
-    font-style: normal;
+  list-style:none;
+  font-style: normal;
 }
 
-#caja-de-datos span {
-    padding-left: 0px;
+#datos span {
+  padding-left: 0px;
 	font-weight: bold;
+  color: #3a86ff;
 }
+
+/*NAV*/
+
+.botonera {
+  max-width: 1250px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li a {
+display: flex;
+justify-content: center;
+padding: 16px;
+font-family: Helvetica;
+font-weight: bold;
+color: white;
+width: 100px;
+height: auto;
+background-color: #ff006e;
+border-radius: 100px;
+transition-duration: 0.3s;
+transition-property: transform;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #fb5607;
+  transform: scale(1.1);
+}
+
+/*MAIN*/
 
 .sobre-mi {
-    border-style: solid;
-    border-width: 5px;
-    border-color: #516af6;
-    width: 1080px;
     height: 150px;
-    border-radius: 20px;
-    margin: 50px;
+    margin: 65px 100px 65px 100px;
   }
   
-  .sobre-mi p {
+.sobre-mi p {
     color: black;
-    background-color: none;
-    font-size: 12pt;
-    margin: 30px;
-    align-content: center;
+    font-size: 14pt;
     font-family: Helvetica;
   }
 
-  .titulo {
-    width: 50%;
-    padding: 30px;
+h2 {
+  color: #8338ec;
+  font-family: Helvetica;
+  font-size: 18pt;
+  margin-bottom: 12px;
+}
+
+/*ASIDE*/
+
+aside{ 
+  float: right;
+  width: 200px;
+  background-color: #fb5607;
+  padding: 25px;
+  border-radius: 8px;
+  margin-right: 100px;
+}
+
+aside h2 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 18pt;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+aside ul {
+  margin-top: 40px;
+  font-size: 16pt;
+  font-family: Helvetica;
+}
+
+aside ul li { 
+  list-style: none;
+  font-style: normal;
+}
+
+aside p {
+  font-family: Helvetica;
+  color: white;
+  margin-left: 25px;
+  font-style: italic;
+}
+
+aside span {
+	font-weight: 950;
+  color: #8338ec;
+}
+
+/*ARTICLE*/
+
+.titulo {
+  width: 310px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+article {
     display: flex;
     flex-direction: column;
     font-family: Helvetica;
-    font-weight: bold;
   }
   
-  article {
-    display: flex;
-    flex-direction: column;
-    font-family: Helvetica;
-  }
-  
-  article h2 {
-    background-color: #84a59d;
+article h2 {
+    background-color: #8338ec;
     color: white;
     padding: 10px;
     border-radius: 8px;
     font-size: 18px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-family: Helvetica;
   }
-  
+
   .subtitulo h3 {
     margin: 0;
     font-size: 16px;
-    background-color: #f28482;
+    background-color: #ff006e;
     padding: 8px;
     border-radius: 6px;
     font-family: Helvetica;
   }
   
   .subtitulo p {
-    font-size: 14px;
+    font-size: 12pt;
     margin: 4px;
-    font-style: none;
+    font-style: italic;
     font-family: Helvetica;
     align-content: center;
+  }
+
+  article p {
+    font-style: italic;
+    font-family: Helvetica;
+    font-size: 12pt;
+    margin: 4px;
+  }
+  
+  .caja-datos-izq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .caja-datos-der {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .caja-izquierda {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+  }
+  .caja-derecha {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
   }
 
   .skill-bar {
@@ -119,49 +247,26 @@ h1 {
   .skill-bar span {
     display: block;
     height: 14px;
+    width: 5px;
     border-radius: 20px;
-    background-color: #f28482;
+    background-color: #3a86ff;
     color: black;
-    font-size: 14px;
+    font-size: 12pt;
+    font-style: italic;
     text-align: left;
     font-family: Helvetica;
   }
 
-a {
-    text-decoration:none;
-    text-align: center;
-}
-
-a :link {
-    color: red;
-}
-
-.flex-container {
-    flex-flow:row;
-    max-width: 1080px;
-    height: 500px;
-    margin-left: 60px;
+  footer {
+    display: flex;
+    justify-content: center;
   }
 
-  .flex-item {
-    text-align: center;
-    margin: 10px;
-    width: 600px;
-    height: 600px;
+  footer p {
+    font-family: Helvetica;
+    font-size: 10pt;
+    font-style: italic;
   }
-
-.a {
-    display: flex;
-    align-self:flex-start;
-    flex-direction: column;
-}
-
-.b {
-    display: flex;
-    align-self:flex-end;
-    flex-direction: column;
-
-}
 
 /*shrikhand-regular {
     font-family: "Shrikhand", serif;
